@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="registrarse.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <header>
+            <nav class="navegacion">
+                <ul class="lista">
+                    <li><a href="main.html">Inicio</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li>
+                    <li><a href="sesion.html">Iniciar sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="formulario">
+        <form class=formulario-registro action="procesador.php" method="post" name="frm">
+
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <input class="controls" type="text" name="nombre" placeholder="Ingrese su nombre" maxlength="15" required>
+            <input class="controls" type="text" name="apellido" placeholder="Ingrese su apellido" maxlength="15" required>
+            <input class="controls" type="email" name="email" placeholder="Ingrese su correo electronico" required>
+            <input class="controls" type="password" name="password" placeholder="Ingrese su contraseña nueva" maxlength="10" required>
+            <input class="controls" input type="password" name="password1" placeholder="Ingrese nuevamente su contraseña" maxlength="10" required>
+            <input class="controls" type="date" name="fecha" placeholder="Ingresese su fecha de nacimiento"></p>
+            <p>sexo:
+                <input class="controls-radio" type="radio" name="sexo" value="hombre">Hombre
+                <input class="controls-radio" type="radio" name="sexo" value="mujer">Mujer
+            </p>
+            <p>Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a la web. Obtén más información. Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política de cookies.
+            </p>
+
+            <input class="btn" type="submit" value="Registarse">
+            <p>¿Ya tienes una cuenta?</p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="sesion.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <header>
+            <nav class="navegacion">
+                <ul class="lista">
+                    <li><a href="main.html">Inicio</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li>
+                    <li><a href="sesion.html">Iniciar sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="formulario">
+        <form class="formulario-registro action" action="process.php" method="post">
+
+            <h1>INICIAR SESIÓN EN LIFE-NATURE</h1>
+            <input class="controls" type="text" name="usuario" placeholder="Ingrese su usuario o correo" maxlength="25" required>
+            <input class="controls" type="password" name="password" placeholder="Ingrese su contraseña nueva" maxlength="10" required>
+            <input class="btn" type="submit" value="Iniciar sesíon">
+
+            <p>¿Has olvidado los datos de la cuenta?</p>
+            <input class="btn" type="submit" value="Crear cuenta nueva">
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
